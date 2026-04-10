@@ -48,7 +48,13 @@ matrix = run_and_match(
 
 ## Citation
 
-A paper describing `rgevolve` is in preparation.
+If you use `rgevolve` in a scientific publication, please cite:
+
+> A. Smolkovič, P. Stangl
+>
+> "Differentiable Multi-scale Effective Field Theory Likelihoods for Beyond the Standard Model Phenomenology"
+>
+> [arXiv:2603.15801](https://arxiv.org/abs/2603.15801)
 
 ## Bugs and feature requests
 
