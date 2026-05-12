@@ -1,0 +1,37 @@
+name: Tests
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v4
+        with:
+          path: _src/
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          pushd _src
+          python3 -m pip install --upgrade pytest
+          python3 -m pip install .
+          popd
+
+      - name: Run tests
+        shell: bash
+        run: |
+          pushd _src
+          python3 -m pytest
+          popd
