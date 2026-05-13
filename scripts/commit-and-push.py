@@ -137,9 +137,15 @@ def commit_one(
     files_block = "\n".join(indent + line for line in files.splitlines())
 
     if dry_run:
+        hint = (
+            "git add -A (all lines below will be staged)"
+            if add_all else
+            "git add -u (only tracked lines below will be staged; "
+            "untracked '??' lines stay untouched — pass --add-all to "
+            "include them)"
+        )
         return True, (
-            f"would commit on {branch}; "
-            f"{'git add -A' if add_all else 'git add -u'}; status:\n{files_block}"
+            f"would commit on {branch}; {hint}; status:\n{files_block}"
         )
 
     add_args = ("add", "-A") if add_all else ("add", "-u")
