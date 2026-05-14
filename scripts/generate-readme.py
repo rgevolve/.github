@@ -59,7 +59,7 @@ PACKAGES: List[Dict[str, str]] = [
         ),
     },
     {
-        "local_dir": "rgevolve.smeft.warsaw-up",
+        "local_dir": "rgevolve.smeft.warsaw_up",
         "upstream": "rgevolve.smeft.warsaw_up",
         "hdf5_rel": "src/rgevolve/smeft/warsaw_up/data.h5",
         "eft": "SMEFT",
@@ -92,7 +92,7 @@ PACKAGES: List[Dict[str, str]] = [
         ),
     },
     {
-        "local_dir": "rgevolve.wet-3.flavio",
+        "local_dir": "rgevolve.wet_3.flavio",
         "upstream": "rgevolve.wet_3.flavio",
         "hdf5_rel": "src/rgevolve/wet_3/flavio/data.h5",
         "eft": "WET-3",
@@ -103,7 +103,7 @@ PACKAGES: List[Dict[str, str]] = [
         ),
     },
     {
-        "local_dir": "rgevolve.wet-3.jms",
+        "local_dir": "rgevolve.wet_3.jms",
         "upstream": "rgevolve.wet_3.jms",
         "hdf5_rel": "src/rgevolve/wet_3/jms/data.h5",
         "eft": "WET-3",
@@ -114,7 +114,7 @@ PACKAGES: List[Dict[str, str]] = [
         ),
     },
     {
-        "local_dir": "rgevolve.wet-4.flavio",
+        "local_dir": "rgevolve.wet_4.flavio",
         "upstream": "rgevolve.wet_4.flavio",
         "hdf5_rel": "src/rgevolve/wet_4/flavio/data.h5",
         "eft": "WET-4",
@@ -125,7 +125,7 @@ PACKAGES: List[Dict[str, str]] = [
         ),
     },
     {
-        "local_dir": "rgevolve.wet-4.jms",
+        "local_dir": "rgevolve.wet_4.jms",
         "upstream": "rgevolve.wet_4.jms",
         "hdf5_rel": "src/rgevolve/wet_4/jms/data.h5",
         "eft": "WET-4",

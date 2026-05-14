@@ -57,13 +57,13 @@ REPOS: List[str] = [
     ".github",
     "rgevolve-core",
     "rgevolve.smeft.warsaw",
-    "rgevolve.smeft.warsaw-up",
+    "rgevolve.smeft.warsaw_up",
     "rgevolve.wet.flavio",
     "rgevolve.wet.jms",
-    "rgevolve.wet-3.flavio",
-    "rgevolve.wet-3.jms",
-    "rgevolve.wet-4.flavio",
-    "rgevolve.wet-4.jms",
+    "rgevolve.wet_3.flavio",
+    "rgevolve.wet_3.jms",
+    "rgevolve.wet_4.flavio",
+    "rgevolve.wet_4.jms",
     "rgevolve",
 ]
 
